@@ -1,0 +1,2 @@
+OnCreate()中
+setContentView(R.layout.ceshi_edit_main);方法下方加删除用户信息语句，供测试用户登陆时使用

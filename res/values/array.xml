@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="hero_name">
+        <item>中学在哪儿上的？</item>
+        <item>高三的同位姓名？</item>
+        <item>最喜欢的歌曲名字？</item>
+        <item>最想去的地方？</item>
+        <item>家乡最美丽的是什么？</item>
+        <item>高中班主任姓名？</item>
+        <item>小学班主任叫什么名字？</item>
+        <item>你闺蜜的外号叫啥？</item>
+    </string-array>
+    <string-array name="hero_1">
+        <item>家乡最美丽的是什么？</item>
+        <item>最想去的地方？</item>
+        <item>中学在哪儿上的？</item>
+        <item>最喜欢的歌曲名字？</item>
+        <item>高三的同位姓名？</item>
+        <item>高中班主任姓名？</item>
+        <item>小学班主任叫什么名字？</item>
+        <item>你闺蜜的外号叫啥？</item>
+    </string-array>
+    <string-array name="hero_2">
+        <item>最喜欢的歌曲名字？</item>
+        <item>最想去的地方？</item>
+        <item>家乡最美丽的是什么？</item>
+        <item>中学在哪儿上的？</item>
+        <item>高中班主任姓名？</item>
+        <item>高三的同位姓名？</item>
+        <item>小学班主任叫什么名字？</item>
+        <item>你闺蜜的外号叫啥？</item>
+    </string-array>
+
+</resources>

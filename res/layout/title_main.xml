@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+ 
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+ 
+            <ImageView
+                android:id="@+id/id_img_changecity"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+            android:layout_gravity="center"
+                android:paddingLeft="8dp"
+                android:src="@drawable/img_house" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="26dp"
+                android:layout_height="19dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/location" />
+
+            <TextView
+                android:id="@+id/id_text_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="泰山区"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="right" >
+
+            <TextView
+                android:id="@+id/id_text_changcity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingRight="10dp"
+                android:text="切换城市"
+                android:textColor="#FFFFFF" />
+
+            <!-- <ImageView -->
+            <!-- android:layout_width="30dp" -->
+            <!-- android:layout_height="30dp" -->
+            <!-- android:paddingRight="8dp" -->
+            <!-- android:scaleType="centerInside" -->
+            <!-- android:src="@drawable/img_share" /> -->
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

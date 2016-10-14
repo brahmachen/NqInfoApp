@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/comment_item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="10dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="4.63" >
+
+        <TextView
+            android:id="@+id/nqlt_item_main_zan"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="18dp" />
+
+        <TextView
+            android:id="@+id/nqlt_item_main_pinglun"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="16dp"
+            android:layout_toLeftOf="@+id/nqlt_item_main_zan" />
+
+        <TextView
+            android:id="@+id/nqlt_item_main_nicheng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/nqlt_item_main_date"
+            android:layout_alignParentTop="true"
+            android:textSize="14sp"
+            android:text="昵称" 
+            android:textColor="#616161"
+            />
+
+        <ImageView
+            android:id="@+id/nqlt_item_main_touxiang"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/nqlt_item_main_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nqlt_item_main_pinglun"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/nqlt_item_main_touxiang"
+            android:text="今天 19:20" 
+            android:textSize="12sp"
+            android:textColor="#8B8378"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp" >
+
+        <TextView
+            android:id="@+id/nqlt_item_main_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="农情论坛的标题显示在此位置。。。。。。"
+            android:textSize="18sp"
+         
+             />
+    </RelativeLayout>
+
+</LinearLayout>

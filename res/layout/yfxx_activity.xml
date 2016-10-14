@@ -1,0 +1,419 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eaeaea"
+    android:orientation="vertical" >
+
+    <include layout="@layout/yfxx_title" />
+
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        
+       <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+    
+      
+    <RelativeLayout
+        android:id="@+id/yfxx_ll_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="12dp"
+        android:background="#fcfcfc"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/yfxx_ll_1_iv"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/yfxx_location" />
+
+        <TextView
+            android:id="@+id/yfxx_tv_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/yfxx_ll_1_iv"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/yfxx_ll_1_iv"
+            android:text="@string/yfxx_location"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/yfxx_tv_location_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/yfxx_ll_1_iv"
+            android:layout_below="@+id/yfxx_ll_1_iv"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:lines="2"
+            android:textColor="#000000"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/yfxx_ll_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="12dp"
+        android:background="#fcfcfc"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/yfxx_ll_2_iv"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/yfxx_yf" />
+
+        <TextView
+            android:id="@+id/yfxx_tv_soil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/yfxx_ll_2_iv"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/yfxx_ll_2_iv"
+            android:text="土壤养分:"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@+id/yfxx_jianjiedan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/yfxx_ll_2_iv"
+            android:layout_below="@+id/yfxx_ll_2_iv"
+            android:layout_marginTop="22dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/yfxx_tv_soil_N"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="碱解氮 "
+                android:textColor="#000000"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/yfxx_tv_soil_N_content"
+                android:layout_height="wrap_content"
+                 android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/yfxx_tv_soil_N_pj"
+                android:layout_height="wrap_content"
+                 android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <View 
+            android:id="@+id/view_1"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/yfxx_jianjiedan"
+            android:background="#666666"
+            android:padding="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="7dp"/>
+        <LinearLayout
+            android:id="@+id/yfxx_suxiaojia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/yfxx_ll_2_iv"
+            android:layout_below="@+id/view_1"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/yfxx_tv_soil_K"
+                android:layout_height="wrap_content"
+                 android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="速效钾 "
+                android:textColor="#000000"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/yfxx_tv_soil_K_content"
+                android:layout_height="wrap_content"
+                 android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/yfxx_tv_soil_K_pj"
+                android:layout_height="wrap_content"
+                 android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+         <View 
+            android:id="@+id/view_2"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/yfxx_suxiaojia"
+            android:background="#666666"
+            android:padding="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="7dp"/>
+         
+        <LinearLayout
+            android:id="@+id/yfxx_youxiaolin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/yfxx_ll_2_iv"
+            android:layout_below="@+id/view_2"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/yfxx_tv_soil_P"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                 android:layout_width="0dp"
+                android:text="有效磷 "
+                android:textColor="#000000"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/yfxx_tv_soil_P_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                 android:layout_width="0dp"
+                android:textColor="#000000"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/yfxx_tv_soil_P_pj"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                 android:layout_width="0dp"
+                android:textColor="#000000"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+         <View 
+            android:id="@+id/view_3"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/yfxx_youxiaolin"
+            android:background="#666666"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+            android:layout_marginBottom="7dp"/>
+         
+        <LinearLayout
+            android:id="@+id/yfxx_youjizhi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/yfxx_ll_2_iv"
+            android:layout_below="@+id/view_3"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/yfxx_tv_soil_M"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                 android:layout_width="0dp"
+                android:text="有机质 "
+                android:textColor="#000000"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/yfxx_tv_soil_M_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                 android:layout_width="0dp"
+                android:textColor="#000000"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/yfxx_tv_soil_M_pj"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                 android:layout_width="0dp"
+                android:textColor="#000000"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+         <View 
+            android:id="@+id/view_4"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/yfxx_youjizhi"
+            android:background="#666666"
+            android:padding="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="7dp"/>
+         
+        <LinearLayout
+            android:id="@+id/yfxx_ph"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/yfxx_ll_2_iv"
+            android:layout_below="@+id/view_4"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/yfxx_tv_soil_ph"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                 android:layout_width="0dp"
+                android:text="PH"
+                android:textColor="#000000"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/yfxx_tv_soil_ph_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                 android:layout_width="0dp"
+                android:textColor="#000000"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/yfxx_tv_soil_ph_pj"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                 android:layout_width="0dp"
+                android:textColor="#000000"
+                android:textSize="13sp" />
+        </LinearLayout>
+        
+        <View 
+            android:id="@+id/view_5"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/yfxx_ph"
+            android:background="#666666"
+            android:padding="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="7dp"/>
+         <LinearLayout
+            android:id="@+id/yfxx_shuoming"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/yfxx_ll_2_iv"
+            android:layout_below="@+id/view_5"
+            android:layout_marginBottom="7dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                android:text="适合作物生长"
+                android:textColor="#666666"
+                android:textSize="13sp" 
+                android:layout_marginBottom="7dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/yfxx_ll_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="12dp"
+        android:background="#fcfcfc"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/yfxx_ll_3_iv"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/yfxx_select" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/yfxx_ll_3_iv"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/yfxx_ll_3_iv"
+            android:text="选择作物，计算测土配方:"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@+id/yfxx_select_crop_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/yfxx_ll_3_iv"
+            android:layout_below="@+id/yfxx_ll_3_iv"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="b1"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/yfxx_xiaomai" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                          android:layout_marginTop="7dp"
+                    android:layout_marginBottom="7dp"
+                     android:layout_gravity="center_horizontal"
+                    android:text="小麦"
+                    android:textColor="#000000"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="b2"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/yfxx_yumi" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginBottom="7dp"
+                    android:text="玉米"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="#000000"
+                    android:textSize="13sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    </LinearLayout>
+  </ScrollView>
+</LinearLayout>

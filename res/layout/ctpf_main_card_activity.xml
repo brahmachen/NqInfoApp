@@ -1,0 +1,351 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eaeaea"
+    android:orientation="vertical" >
+
+    <include layout="@layout/ctpf_title" />
+
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+               <RelativeLayout
+        android:id="@+id/yfxx_ll_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="12dp"
+        android:background="#fcfcfc"
+        android:orientation="vertical" >
+        
+    <TextView
+        android:id="@+id/TextView1"
+       android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+             android:layout_marginLeft="15dp"
+            android:textColor="#000000"
+            android:textSize="16sp"
+        android:text="目标产量（公斤/亩）"/>
+
+    <LinearLayout
+        android:id="@+id/ctpf_card_LinearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TextView1"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/ctpf_et_target"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:ems="10" >
+        </EditText>
+
+        <Button
+            android:id="@+id/TextView2"
+             android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="35dp"
+            android:background="@drawable/click_jisuan_ctpf"
+            android:onClick="calculate"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="计算配方" 
+             android:textColor="#ffffff"
+            android:textSize="16sp">
+        </Button>
+    </LinearLayout>
+    </RelativeLayout>
+
+
+
+            <RelativeLayout
+        android:id="@+id/yfxx_ll_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="12dp"
+        android:background="#fcfcfc"
+        android:orientation="vertical" >
+        
+                
+
+        <TextView
+            android:id="@+id/ctpf_card_title3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+             android:layout_marginLeft="15dp"
+            android:text="纯养分推荐（公斤/亩）:"
+            android:textColor="#000000"
+            android:textSize="16sp"/>
+
+   
+  <LinearLayout
+            android:id="@+id/ctpf_chundan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/ctpf_card_title3"
+            android:layout_below="@+id/ctpf_card_title3"
+            android:layout_marginTop="22dp"
+            android:orientation="horizontal" >
+            
+            <TextView
+                android:id="@+id/ctpf_tv_soil_niaosu"
+                 android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:textSize="13sp"
+                android:text="纯氮："/>
+
+            <TextView
+                android:id="@+id/ctpf_tv_soil_chundan_content"
+              android:layout_height="wrap_content"
+                 android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:textSize="13sp"/>
+             </LinearLayout>
+             
+   <View 
+            android:id="@+id/view_1"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/ctpf_chundan"
+            android:background="#666666"
+            android:padding="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="7dp"/>
+   
+   
+  <LinearLayout
+            android:id="@+id/ctpf_p2o5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/ctpf_chundan"
+            android:layout_below="@+id/ctpf_chundan"
+            android:layout_marginTop="22dp"
+            android:orientation="horizontal" >
+            <TextView
+                android:id="@+id/ctpf_tv_soil_p2o5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:textSize="13sp"
+                android:text="五氧化二磷："/>
+
+            <TextView
+                android:id="@+id/ctpf_tv_soil_p2o5_content"
+                 android:layout_height="wrap_content"
+                 android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:textSize="13sp"/>
+            
+ </LinearLayout>
+  <View 
+            android:id="@+id/view_2"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/ctpf_p2o5"
+            android:background="#666666"
+            android:padding="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="7dp"/>
+
+              <LinearLayout
+                  android:id="@+id/ctpf_ko"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_alignLeft="@+id/ctpf_p2o5"
+                  android:layout_below="@+id/ctpf_p2o5"
+                  android:layout_marginBottom="7dp"
+                  android:layout_marginTop="22dp"
+                  android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/ctpf_tv_soil_ko"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:textSize="13sp"
+                android:text="氧化钾："/>
+
+            <TextView
+                android:id="@+id/ctpf_tv_soil_ko_content"
+                android:layout_height="wrap_content"
+                 android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:textSize="13sp" 
+                />
+            </LinearLayout>
+        </RelativeLayout>
+        
+        
+        
+        <RelativeLayout
+        android:id="@+id/ctpf_ll_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="12dp"
+        android:background="#fcfcfc"
+        android:orientation="vertical" >
+        
+            <TextView
+                android:id="@+id/ctpf_card_title3"
+               android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+             android:layout_marginLeft="15dp"
+            android:textColor="#000000"
+            android:textSize="16sp"
+                android:text="基肥推荐（公斤/亩）:" />
+
+            
+       
+              <LinearLayout
+            android:id="@+id/ctpf_jifeituijian"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/ctpf_card_title3"
+            android:layout_below="@+id/ctpf_card_title3"
+            android:layout_marginTop="17dp"
+            android:orientation="horizontal" >
+            <TextView
+                  android:id="@+id/ctpf_tv_soil_niaosu_z"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:textSize="13sp"
+                android:text="施用复合肥:"/>
+
+            <TextView
+               android:id="@+id/ctpf_tv_soil_fuhefei_content"
+                android:layout_height="wrap_content"
+                 android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:textSize="13sp" />
+            </LinearLayout>
+        </RelativeLayout>
+        
+        
+     <RelativeLayout
+        android:id="@+id/ctpf_ll_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="12dp"
+        android:background="#fcfcfc"
+        android:orientation="vertical" >
+       
+        
+            <TextView
+                android:id="@+id/ctpf_card_title4"
+               android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+             android:layout_marginLeft="15dp"
+            android:textColor="#000000"
+            android:textSize="16sp"
+                android:text="追肥推荐（公斤/亩）:"/>
+
+            
+             <LinearLayout
+            android:id="@+id/ctpf_jifeituijian"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/ctpf_card_title4"
+            android:layout_below="@+id/ctpf_card_title4"
+            android:layout_marginTop="17dp"
+            android:orientation="horizontal" >
+            <TextView
+                android:id="@+id/ctpf_tv_soil_niaosu"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:textSize="13sp"
+               android:text="追施尿素:"/>
+
+            <TextView
+                 android:id="@+id/ctpf_tv_soil_zhuishi_niaosu_content"
+                android:layout_height="wrap_content"
+                 android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:textSize="13sp" />
+            </LinearLayout>
+        </RelativeLayout>
+        
+     
+          
+
+   
+     
+     <RelativeLayout
+        android:id="@+id/ctpf_ll_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="12dp"
+        android:background="#fcfcfc"
+        android:orientation="vertical" >
+       
+
+        <TextView
+            android:id="@+id/ctpf_beizhu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+             android:layout_marginLeft="15dp"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:text="备注："/>
+
+      
+
+        <TextView
+            android:id="@+id/ctpf_card_jianyi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/ctpf_beizhu"
+            android:layout_below="@id/ctpf_beizhu"
+            android:layout_marginTop="17dp"
+            android:textColor="#666666"
+            android:textSize="13sp" 
+            android:text="适合作物生长："/>
+        </RelativeLayout>
+    </LinearLayout>
+
+  </ScrollView>
+ 
+</LinearLayout>

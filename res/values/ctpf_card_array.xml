@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="ctpf_xiaomai">
+        <item>"1.建议基肥配施有机肥，后期结合肥药混合、一喷三防"</item>
+        <item>"2.如果使用的肥料不是推荐品种，用户可以根据“纯养分含量”和所“使用肥料品种的养分含量”自行计算"</item>
+     
+    </string-array>
+    <string-array name="ctpf_crop_target_xydm">
+        <item>"200"</item>
+        <item>"800"</item>
+        <item>"350"</item>
+        <item>"1000"</item>
+        <item>"3000"</item>
+        <item>"7500"</item>
+        <item>"50"</item>
+        <item>"160"</item>
+    </string-array>
+
+</resources>

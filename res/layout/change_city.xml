@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:alpha="100"
+        android:background="#459a73" >
+
+        <ImageButton
+            android:id="@+id/changecity_head_back"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_centerVertical="true"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/selector_goback_bg" />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:text="切换城市"
+            android:textSize="18dp" />
+
+    </RelativeLayout>
+
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextView_changecity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="搜索城市" >
+
+        <requestFocus />
+    </AutoCompleteTextView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/button_confirm"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="确定" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        android:padding="5dp" >
+
+        <EditText
+            android:id="@+id/nqxx_comment_edit_et"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/comment_edit_bg"
+            android:gravity="left|top"
+            android:maxLines="3"
+            android:singleLine="true"
+            android:hint="请输入评论内容"
+            android:textColorHint="#AAAAAA"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/nqxx_submit_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="发表" />
+    </LinearLayout>
+
+</RelativeLayout>

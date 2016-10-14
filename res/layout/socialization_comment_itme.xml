@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/comment_item_ll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="10dp"
+    android:layout_marginBottom="10dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="4.63" 
+        android:layout_marginLeft="10dp">
+
+        <ImageView
+            android:id="@+id/comment_touxiang"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/comment_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/comment_touxiang"
+            android:layout_toRightOf="@+id/comment_touxiang"
+            android:text="今天 19:20" 
+            android:layout_marginLeft="20dp"
+            android:textSize="15sp"/>
+
+        <Button
+            android:id="@+id/comment_pinglun"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="18dp"
+            android:background="@drawable/nqxx_comment_comment" />
+
+        <ImageView
+            android:id="@+id/comment_zan"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/comment_zan_count"/>
+        
+        
+          <TextView
+            android:id="@+id/comment_zan_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="18dp"
+            android:layout_toLeftOf="@+id/comment_pinglun"
+            android:text="0" 
+            android:layout_marginLeft="10dp"
+             android:textSize="15sp"/>
+          
+
+        <TextView
+            android:id="@+id/comment_nicheng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/comment_touxiang"
+            android:layout_alignParentTop="true"
+            android:text="昵称" 
+            android:layout_marginLeft="20dp"
+            android:textSize="15sp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="4.63" >
+        
+     <TextView
+            android:id="@+id/comment_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/comment_date"
+            android:layout_alignParentTop="true"
+            android:text="评论消息的内容显示在此位置上，实例效果如图所示。。。。。。。"
+            android:layout_marginLeft="10dp" 
+            android:textSize="18sp"/>
+        
+        
+    </RelativeLayout>
+
+</LinearLayout>
